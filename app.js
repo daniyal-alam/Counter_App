@@ -12,10 +12,9 @@ function inc() {
 }
 
 function dec() {
-  count--;
-  myDocument.innerText = count;
-
-  if (count < 0) {
+  if (count > 0) {
+    count--;
+    myDocument.innerText = count;
     myDocument.style.color = "#e74c3c";
   }
 }
